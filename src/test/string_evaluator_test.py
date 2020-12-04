@@ -31,8 +31,8 @@ class StringManipulatorTest(TestCase):
         self.binary_function_assert_equals(StringManipulator().compare, [
             ("Hello", 0, False),
             ("Hello", "Hello", True),
-            ("0", 0, True),
-            (None, 0, True),
+            ("0", 0, False),
+            (None, 0, False),
             (False, 0, True),
             (True, 1, True)
         ])
